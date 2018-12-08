@@ -11,12 +11,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
 <title>JSP Page</title>
 </head>
 <body>
 
 	<h1>欢迎你， ${name }</h1>
-	<table border="1px" >
+	<table class="table table-striped" >
 		<tr>
 			<td>编号</td>
 			<td>标题</td>
@@ -48,7 +49,8 @@
 			}
 		%>
 	</table>
-	<a href="add.jsp">添加留言</a>
+	<h3><a href="add.jsp" class="btn btn-default btn-lg active" role="button">添加留言</a> </h3>
+	
 
 </body>
 </html>

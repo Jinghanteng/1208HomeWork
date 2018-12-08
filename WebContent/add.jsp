@@ -14,7 +14,7 @@
 <body>
 	<form action="Add">
 		标题<input name="title"> <br />
-		<textarea name="text" rows="10">请输入内容</textarea>
+		<textarea name="text" class="form-control" rows="3">请输入内容</textarea>
 		<br /> <select name="type">
 			<%
 				TypeDao typeDao = new TypeDao();

@@ -15,11 +15,6 @@
     		<br />
     		<input type="submit" value="注册" />
     		<br />
-    	
-    		
-    		
-    		
-    		
     	</form>
  	</body>
 </html>

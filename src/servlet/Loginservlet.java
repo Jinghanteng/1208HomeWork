@@ -14,6 +14,32 @@ import model.User;
 /**
  * Servlet implementation class Loginservlet
  */
+
+/*
+*
+*          ┌─┐       ┌─┐
+*       ┌──┘ ┴───────┘ ┴──┐
+*       │                 │
+*       │       ───       │
+*       │  ─┬┘       └┬─  │
+*       │                 │
+*       │       ─┴─       │
+*       │                 │
+*       └───┐         ┌───┘
+*           │         │
+*           │         │
+*           │         │
+*           │         └──────────────┐
+*           │                        │
+*           │                        ├─┐
+*           │                        ┌─┘
+*           │                        │
+*           └─┐  ┐  ┌───────┬──┐  ┌──┘
+*             │ ─┤ ─┤       │ ─┤ ─┤
+*             └──┴──┘       └──┴──┘
+*                 神兽保佑
+*                 代码无BUG!
+*/
 @WebServlet("/Loginservlet")
 public class Loginservlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -45,14 +71,13 @@ public class Loginservlet extends HttpServlet {
 			}else {
 				response.sendRedirect("login.jsp");
 				String msg="密码错误";
+				session.setAttribute("msg", msg);
 			}
 		}else {
 			String msg="用户名错误";
+			session.setAttribute("msg", msg);
 			response.sendRedirect("login.jsp");
 		}
-		
-		
-		
 	}
 
 	/**
